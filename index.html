@@ -46,9 +46,39 @@
       <li>🧾 Affordable monthly pricing — starting at KES 2,500</li>
     </ul>
   </section>
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="carousel">
+    <div class="testimonial active">
+      <p>"CyberShield Lite gave us a clear view of our weaknesses — simple and effective."</p>
+      <strong>– NGO, Nairobi</strong>
+    </div>
+    <div class="testimonial">
+      <p>"We received a detailed report with patch steps. The NDA gave us peace of mind."</p>
+      <strong>– Tech Startup, Westlands</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Affordable, easy to use, and no installation needed. Highly recommended."</p>
+      <strong>– SME Owner, Mombasa</strong>
+    </div>
+  </div>
+</section>
 
   <footer>
     <p>&copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.</p>
   </footer>
+  <script>
+let index = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+
+function rotateTestimonials() {
+  testimonials.forEach(t => t.classList.remove("active"));
+  testimonials[index].classList.add("active");
+  index = (index + 1) % testimonials.length;
+}
+
+setInterval(rotateTestimonials, 4000); // Rotate every 4 seconds
+</script>
+
 </body>
 </html>

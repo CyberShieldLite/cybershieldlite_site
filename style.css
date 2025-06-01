@@ -50,3 +50,32 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+.testimonials {
+  background: #f1f1f1;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+.testimonial {
+  display: none;
+  font-style: italic;
+  padding: 1rem;
+}
+.testimonial.active {
+  display: block;
+  animation: fadeIn 1s;
+}
+.testimonial strong {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #0A1F44;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -5,39 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CyberShield Lite | Pricing</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/cybershield_logo.png" type="image/png">
+  <style>
+    .pricing-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .pricing-container h1 {
+      font-size: 2rem;
+      color: #0A1F44;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .plan-box {
+      background: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.03);
+    }
+
+    .plan-box h2 {
+      font-size: 1.5rem;
+      color: #00D1B2;
+      margin-bottom: 0.5rem;
+    }
+
+    .plan-price {
+      font-size: 1.25rem;
+      color: #0A1F44;
+      margin-bottom: 1rem;
+    }
+
+    .plan-box ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .plan-box li {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .plan-cta {
+      background: #00D1B2;
+      color: white;
+      text-decoration: none;
+      padding: 0.7rem 1.25rem;
+      border-radius: 4px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .plan-cta:hover {
+      background: #009f8a;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="nav-container">
-      <img src="assets/back.png" alt="CyberShield Lite Logo" class="logo" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="request.html">Request a Scan</a>
-        <a href="documents.html">Documents</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+<header>
+  <div class="nav-container">
+    <img src="assets/back.png" alt="CyberShield Lite Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="request.html">Request a Scan</a>
+      <a href="documents.html">Documents</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pricing-container">
+  <h1>💳 Choose Your Cybersecurity Plan</h1>
+  <p>Flexible, affordable, and built for every size of organization.</p>
+
+  <div class="pricing-grid">
+    <div class="plan-box">
+      <h2>🟢 Basic Plan</h2>
+      <div class="plan-price">KES 2,500 / month</div>
+      <ul>
+        <li>✔ 2 vulnerability scans monthly</li>
+        <li>✔ CVE overview + basic patch tips</li>
+        <li>✔ PDF report via email</li>
+        <li>✔ NDA + consent form</li>
+      </ul>
+      <a href="request.html" class="plan-cta">Select Basic Plan</a>
     </div>
-  </header>
 
-  <main style="padding: 2rem;">
-    <h1>Pricing Plans</h1>
-    <h2>🟢 Basic Plan — KES 2,500/month</h2>
-    <ul>
-      <li>✔ 2 scans per month</li>
-      <li>✔ CVE summary + patch tips</li>
-      <li>✔ Email report delivery</li>
-    </ul>
-
-    <h2>🟡 Pro Plan — KES 7,500/month</h2>
-    <ul>
-      <li>✔ 10 scans per month</li>
-      <li>✔ Full OpenVAS + Nmap report</li>
-      <li>✔ CVSS scores, patch links, and recommendations</li>
-      <li>✔ WhatsApp delivery + dedicated support</li>
-    </ul>
-  </main>
+    <div class="plan-box">
+      <h2>🟡 Pro Plan</h2>
+      <div class="plan-price">KES 7,500 / month</div>
+      <ul>
+        <li>✔ 10 full scans (Nmap + OpenVAS)</li>
+        <li>✔ CVSS scores, CVE patch links, severity tags</li>
+        <li>✔ Branded PDF report + patch recommendations</li>
+        <li>✔ WhatsApp delivery + email</li>
+        <li>✔ Priority support</li>
+      </ul>
+      <a href="request.html" class="plan-cta">Select Pro Plan</a>
+    </div>
+  </div>
+</main>
 
 <footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem 1rem 0.5rem 1rem;">
   <p style="margin: 0 0 1rem 0; font-size: 1rem;">

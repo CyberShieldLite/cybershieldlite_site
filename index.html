@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CyberShield Lite — Cybersecurity Made Simple</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/cybershield_logo.png" type="image/png">
 </head>
 <body>
   <header>
@@ -46,43 +47,48 @@
       <li>🧾 Affordable monthly pricing — starting at KES 2,500</li>
     </ul>
   </section>
-<section class="testimonials">
-  <h2>What Our Clients Say</h2>
-  <div class="carousel">
-    <div class="testimonial active">
-      <p>"CyberShield Lite gave us a clear view of our weaknesses — simple and effective."</p>
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <strong>– NGO, Nairobi</strong>
-    </div>
-    <div class="testimonial">
-      <p>"We received a detailed report with patch steps. The NDA gave us peace of mind."</p>
-      <div class="stars">⭐⭐⭐⭐</div>
-      <strong>– Tech Startup, Westlands</strong>
-    </div>
-    <div class="testimonial">
-      <p>"Affordable, easy to use, and no installation needed. Highly recommended."</p>
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <strong>– SME Owner, Mombasa</strong>
-    </div>
-  </div>
-</section>
 
-  <footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem;">>
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="carousel">
+      <div class="testimonial active">
+        <p>"CyberShield Lite gave us a clear view of our weaknesses — simple and effective."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <strong>– NGO, Nairobi</strong>
+      </div>
+      <div class="testimonial">
+        <p>"We received a detailed report with patch steps. The NDA gave us peace of mind."</p>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <strong>– Tech Startup, Westlands</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Affordable, easy to use, and no installation needed. Highly recommended."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <strong>– SME Owner, Mombasa</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem;">
     <p>&copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.</p>
     <img src="assets/footer.png" alt="CyberShield Lite Footer Logo" style="max-width:220px; margin-top:1rem;">
   </footer>
+
   <script>
-let index = 0;
-const testimonials = document.querySelectorAll(".testimonial");
+    document.addEventListener("DOMContentLoaded", function () {
+      let index = 0;
+      const testimonials = document.querySelectorAll(".testimonial");
 
-function rotateTestimonials() {
-  testimonials.forEach(t => t.classList.remove("active"));
-  testimonials[index].classList.add("active");
-  index = (index + 1) % testimonials.length;
-}
+      function rotateTestimonials() {
+        testimonials.forEach(t => t.classList.remove("active"));
+        testimonials[index].classList.add("active");
+        index = (index + 1) % testimonials.length;
+      }
 
-setInterval(rotateTestimonials, 6000); // Rotate every 6 seconds
-</script>
+      setInterval(rotateTestimonials, 6000);
+    });
+  </script>
 
 </body>
 </html>
+

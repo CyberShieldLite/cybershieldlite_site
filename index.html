@@ -8,87 +8,102 @@
   <link rel="icon" href="assets/cybershield_logo.png" type="image/png">
 </head>
 <body>
-  <header>
-    <div class="nav-container">
-      <img src="assets/cybershield_logo.png" alt="CyberShield Lite Logo" class="logo" />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="request.html">Request a Scan</a>
-        <a href="documents.html">Documents</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
+<header class="navbar">
+  <div class="nav-container">
+    <img src="assets/cybershield_logo.png" alt="CyberShield Lite Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="request.html">Request a Scan</a>
+      <a href="documents.html">Documents</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="background: url('assets/cyber.jpg') center/cover no-repeat;">
+  <div class="hero-content">
     <h1>CyberShield Lite</h1>
-    <p>Kenya’s First Lightweight Cybersecurity Scanner for SMEs & Individuals</p>
+    <p>Kenya’s Lightweight Vulnerability Scanner for SMEs, Startups & NGOs</p>
     <a href="request.html" class="btn-primary">Request a Vulnerability Scan</a>
-  </section>
+  </div>
+</section>
 
-  <section class="about">
+<section class="about">
+  <div class="content">
     <h2>What is CyberShield Lite?</h2>
     <p>
-      CyberShield Lite is an affordable, on-demand cybersecurity scanning service built for 
-      small businesses, NGOs, and individuals. Powered by Nmap and OpenVAS, it detects 
-      vulnerabilities, highlights critical exposures, and provides a PDF report with CVEs,
-      CVSS scores, and patch recommendations.
+      CyberShield Lite is a simplified cybersecurity service designed for small businesses,
+      NGOs, and individual users. It runs remote vulnerability scans using industry-standard tools
+      like Nmap and OpenVAS — generating a detailed PDF report with CVEs, CVSS scores, and
+      patch recommendations.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section class="benefits">
-    <h2>Why Choose CyberShield Lite?</h2>
-    <ul>
-      <li>✅ No installation needed — we scan remotely</li>
-      <li>🔍 Detailed CVE reports with patch tips</li>
-      <li>📄 NDA + Consent forms included</li>
-      <li>🧾 Affordable monthly pricing — starting at KES 2,500</li>
-    </ul>
-  </section>
+<section class="benefits">
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>✅ Remote scanning — no installation needed</li>
+    <li>🔍 Accurate CVE detection with patch guidance</li>
+    <li>📄 Legal NDA + Consent Forms provided</li>
+    <li>💼 Affordable plans — from KES 2,500/month</li>
+  </ul>
+</section>
 
-  <section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="carousel">
-      <div class="testimonial active">
-        <p>"CyberShield Lite gave us a clear view of our weaknesses — simple and effective."</p>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <strong>– NGO, Nairobi</strong>
-      </div>
-      <div class="testimonial">
-        <p>"We received a detailed report with patch steps. The NDA gave us peace of mind."</p>
-        <div class="stars">⭐⭐⭐⭐</div>
-        <strong>– Tech Startup, Westlands</strong>
-      </div>
-      <div class="testimonial">
-        <p>"Affordable, easy to use, and no installation needed. Highly recommended."</p>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <strong>– SME Owner, Mombasa</strong>
-      </div>
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="carousel">
+    <div class="testimonial active">
+      <img src="assets/avatar1.png" class="avatar" alt="Client 1" />
+      <p>"CyberShield Lite gave us a clear view of our weaknesses — simple and effective."</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <strong>– NGO, Nairobi</strong>
     </div>
-  </section>
+    <div class="testimonial">
+      <img src="assets/avatar2.png" class="avatar" alt="Client 2" />
+      <p>"We received a detailed report with patch steps. The NDA gave us peace of mind."</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <strong>– Tech Startup, Westlands</strong>
+    </div>
+    <div class="testimonial">
+      <img src="assets/avatar3.png" class="avatar" alt="Client 3" />
+      <p>"Affordable, easy to use, and no installation needed. Highly recommended."</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <strong>– SME Owner, Mombasa</strong>
+    </div>
+  </div>
+</section>
 
-  <footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem;">
-    <p>&copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.</p>
-    <img src="assets/footer.png" alt="CyberShield Lite Footer Logo" style="max-width:220px; margin-top:1rem;">
-  </footer>
+<section class="cta-banner">
+  <h2>Start Protecting Your Business Today</h2>
+  <p>Get a vulnerability scan and detailed report in under 24 hours.</p>
+  <a href="request.html" class="btn-primary">Book My Scan</a>
+</section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let index = 0;
-      const testimonials = document.querySelectorAll(".testimonial");
+<footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem 1rem 0 1rem;">
+  <p>&copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.</p>
+  <div style="margin:0; padding:0;">
+    <img src="assets/footer.png" alt="CyberShield Lite Footer Banner" style="width:100%; height:1.5cm; object-fit:cover; display:block;">
+  </div>
+</footer>
 
-      function rotateTestimonials() {
-        testimonials.forEach(t => t.classList.remove("active"));
-        testimonials[index].classList.add("active");
-        index = (index + 1) % testimonials.length;
-      }
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let index = 0;
+    const testimonials = document.querySelectorAll(".testimonial");
 
-      setInterval(rotateTestimonials, 6000);
-    });
-  </script>
+    function rotateTestimonials() {
+      testimonials.forEach(t => t.classList.remove("active"));
+      testimonials[index].classList.add("active");
+      index = (index + 1) % testimonials.length;
+    }
+
+    setInterval(rotateTestimonials, 6000);
+  });
+</script>
 
 </body>
 </html>
-

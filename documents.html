@@ -3,8 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CyberShield Lite | Documents</title>
+  <title>CyberShield Lite | Legal Documents</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/cybershield_logo.png" type="image/png">
+  <style>
+    .legal-section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      text-align: left;
+    }
+    .legal-section h1 {
+      font-size: 2rem;
+      color: #0A1F44;
+      margin-bottom: 1rem;
+    }
+    .legal-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .legal-section li {
+      background: #f5f5f5;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #00D1B2;
+      font-size: 1.1rem;
+    }
+    .legal-section p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .legal-section .cta {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .legal-section .cta a {
+      background: #00D1B2;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,26 +61,41 @@
     </div>
   </header>
 
-  <main style="padding: 2rem;">
-    <h1>Legal Documents</h1>
-    <p>After submitting the scan request, you’ll receive these documents by email:</p>
+  <main class="legal-section">
+    <h1>🔐 Legal Documentation</h1>
+    <p>
+      As part of our commitment to transparency and responsible cybersecurity practices,
+      CyberShield Lite provides the following legal documents to each client before any scan is performed:
+    </p>
+
     <ul>
-      <li>📝 NDA Form</li>
-      <li>✅ Scan Authorization Consent</li>
+      <li>📝 <strong>Non-Disclosure Agreement (NDA)</strong><br>
+      Ensures mutual confidentiality of all scan data and results.</li>
+
+      <li>✅ <strong>Scan Authorization Consent</strong><br>
+      Authorizes CyberShield Lite to scan your public-facing systems and confirms legal ownership.</li>
     </ul>
-    <p>Sample documents are available on request.</p>
+
+    <p>
+      These documents are automatically sent to your email after you complete the
+      <a href="request.html">Vulnerability Scan Request Form</a>.
+    </p>
+
+    <div class="cta">
+      <p><strong>Need a sample NDA or Consent Form?</strong></p>
+      <a href="contact.html">Request Sample Documents</a>
+    </div>
   </main>
 
   <footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem 1rem 0.5rem 1rem;">
-  <p style="margin: 0 0 1rem 0; font-size: 1rem;">
-    &copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.
-  </p>
-  <div style="width:100%; overflow:hidden; margin-top:0.5rem;">
-    <img src="assets/footer.png"
-         alt="CyberShield Lite Footer Banner"
-         style="width:100%; max-height:1.5cm; object-fit:contain; display:block;">
-  </div>
-</footer>
-
+    <p style="margin: 0 0 1rem 0; font-size: 1rem;">
+      &copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.
+    </p>
+    <div style="width:100%; overflow:hidden; margin-top:0.5rem;">
+      <img src="assets/footer.png"
+           alt="CyberShield Lite Footer Banner"
+           style="width:100%; max-height:1.5cm; object-fit:contain; display:block;">
+    </div>
+  </footer>
 </body>
 </html>
